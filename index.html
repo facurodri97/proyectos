@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Generador de Código QR</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Librería QR -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Generador de Código QR</h1>
+
+<p>
+Pegá el enlace del sitio web y generá tu código QR.
+</p>
+
+<input
+type="text"
+id="url"
+placeholder="https://www.tusitio.com">
+
+<div class="botones">
+
+<button id="generar">
+Generar QR
+</button>
+
+<button id="descargar">
+Descargar PNG
+</button>
+
+</div>
+
+<div id="qrcode"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
