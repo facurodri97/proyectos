@@ -1,0 +1,9 @@
+La aplicación es una página web moderna, intuitiva y completamente responsive diseñada para generar códigos QR a partir de enlaces a sitios web. Su funcionamiento permite que el usuario copie y pegue una URL en un campo de texto y, con solo presionar un botón, obtenga un código QR listo para compartir o imprimir.
+
+La interfaz presenta un diseño limpio y atractivo con una paleta de colores en tonos rojo y azul, ofreciendo una experiencia visual profesional y agradable tanto en computadoras como en tablets y teléfonos móviles.
+
+Entre sus principales funcionalidades se encuentran la validación automática de enlaces, la generación instantánea del código QR, la posibilidad de descargar el QR en formato PNG y un historial de códigos generados. Este historial almacena las URL creadas junto con la fecha y hora de generación, permitiendo regenerar códigos previamente creados, eliminar registros individuales o borrar todo el historial cuando sea necesario.
+
+La aplicación utiliza tecnologías web estándar (HTML, CSS y JavaScript), por lo que no requiere instalación ni software adicional y puede ejecutarse directamente desde cualquier navegador moderno. Su diseño adaptable garantiza una correcta visualización y funcionamiento en diferentes tamaños de pantalla, facilitando el acceso desde cualquier dispositivo.
+
+En conjunto, esta página web constituye una herramienta práctica, rápida y eficiente para la creación y administración de códigos QR destinados a compartir enlaces de forma sencilla y segura.
