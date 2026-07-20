@@ -47,13 +47,13 @@ body{
 
     background:rgba(255,255,255,.20);
 
-    backdrop-filter:blur(15px);
-
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:0 10px 25px rgba(0,0,0,.35);
 
     color:white;
+
+    backdrop-filter:blur(15px);
    
     -webkit-backdrop-filter: blur(15px);
 }
@@ -67,7 +67,7 @@ h1{
 
 p{
 
-     color:white;
+    color:white;
 
     margin-bottom:25px;
 }
@@ -131,6 +131,13 @@ button:disabled{
     opacity:0.5;
 
     cursor:not-allowed;
+}
+
+button:hover:not(:disabled){
+
+    background:#d90429;
+
+    transform:scale(1.05);
 }
 
 #qrcode{
