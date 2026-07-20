@@ -54,6 +54,10 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,.35);
 
     color:white;
+
+    backdrop-filter: blur(15px);
+   
+    -webkit-backdrop-filter: blur(15px);
 }
 
 h1{
@@ -231,7 +235,7 @@ generar.addEventListener("click", ()=>{
         colorDark:"#003b8e",
         colorLight:"#ffffff",
         correctLevel:QRCode.CorrectLevel.H
-});
+    });
     descargar.disabled = false;
 });
 
