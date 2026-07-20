@@ -54,8 +54,6 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,.35);
 
     color:white;
-
-    backdrop-filter: blur(15px);
    
     -webkit-backdrop-filter: blur(15px);
 }
@@ -241,24 +239,32 @@ generar.addEventListener("click", ()=>{
 
 descargar.addEventListener("click", ()=>{
 
-    let img=qrDiv.querySelector("img");
+    let img = qrDiv.querySelector("img");
+    let canvas = qrDiv.querySelector("canvas");
 
-    if(!img){
+    let enlace = document.createElement("a");
 
+    if(img){
+        enlace.href = img.src;
+    }else if(canvas){
+        enlace.href = canvas.toDataURL("image/png");
+    }else{
         alert("Primero genere un QR.");
         return;
     }
 
-    let enlace=document.createElement("a");
-
-    enlace.href=img.src;
-
-    enlace.download="codigoQR.png";
-
+    enlace.download = "codigoQR.png";
     enlace.click();
 
 });
-    
+
+document.getElementById("url").addEventListener("keypress", function(e){
+
+    if(e.key === "Enter"){
+        generar.click();
+    }
+
+});
 </script>
 </body>
 </html>
